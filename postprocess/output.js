@@ -82,7 +82,7 @@ module.exports = {
      */
     createCsv: function(stream, settings) {
         var headers = ['category', 'title', 'description',
-            'resource', 'region', 'statusWord', 'message'];
+            'resource', 'region', 'statusWord', 'Recommendation', 'message'];
         if (settings.compliance) headers.push('compliance');
         var csvWriter = require('csv-write-stream');
         var writer = csvWriter({headers: headers});
@@ -95,7 +95,7 @@ module.exports = {
                 var toWrite = [plugin.category, plugin.title, commaSafe(plugin.description),
                     (result.resource || 'N/A'),
                     (result.region || 'Global'),
-                    exchangeStatusWord(result), commaSafe(result.message)];
+                    exchangeStatusWord(result), commaSafe(plugin.recommended_action), commaSafe(result.message)];
                 
                 if (settings.compliance) toWrite.push(complianceMsg || '');
                 
