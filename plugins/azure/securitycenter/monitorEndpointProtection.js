@@ -9,6 +9,9 @@ module.exports = {
     recommended_action: 'Enable Adaptive Application Controls for Endpoint Protection from the Azure Security Center by ensuring AuditIfNotExists setting is used to monitor missing Endpoint Protection.',
     link: 'https://docs.microsoft.com/en-us/azure/security-center/security-center-policy-definitions',
     apis: ['policyAssignments:list'],
+    compliance: {
+        cis1: '2.5 Ensure ASC Default policy setting "Monitor Endpoint Protection" is not "Disabled"'
+    },
 
     run: function(cache, settings, callback) {
         const results = [];
