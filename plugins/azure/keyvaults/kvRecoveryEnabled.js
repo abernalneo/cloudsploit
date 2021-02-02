@@ -11,7 +11,8 @@ module.exports = {
     apis: ['vaults:list'],
     compliance: {
         hipaa: 'HIPAA requires that all encryption mechanisms be protected against ' +
-                'modifications or loss.'
+                'modifications or loss.',
+		cis1: '8.4 Ensure the key vault is recoverable'
     },
 
     run: function(cache, settings, callback) {
