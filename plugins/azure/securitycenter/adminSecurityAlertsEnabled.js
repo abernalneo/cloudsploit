@@ -9,6 +9,10 @@ module.exports = {
     recommended_action: 'Ensure that security alerts are configured to be sent to subscription owners.',
     link: 'https://docs.microsoft.com/en-us/azure/security-center/security-center-provide-security-contact-details',
     apis: ['securityContacts:list'],
+    compliance: {
+        cis1: '2.19 Ensure that "Send email also to subscription owners" ' +
+		'is set to "On"'
+    },
 
     run: function(cache, settings, callback) {
         const results = [];
