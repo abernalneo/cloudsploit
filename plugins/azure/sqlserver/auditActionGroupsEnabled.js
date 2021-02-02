@@ -12,7 +12,9 @@ module.exports = {
     compliance: {
         hipaa: 'HIPAA requires that a secure audit record for ' +
             'write read and delete is created for all ' +
-            'activities in the system.'
+            'activities in the system.',
+		cis1: '4.2 Ensure that "AuditActionGroups" in "auditing" policy for a SQL server ' +
+				'is set properly'
     },
 
     run: function(cache, settings, callback) {
