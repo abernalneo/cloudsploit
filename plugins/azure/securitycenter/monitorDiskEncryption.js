@@ -11,7 +11,9 @@ module.exports = {
     apis: ['policyAssignments:list'],
     compliance: {
         hipaa: 'HIPAA requires data to be encrypted at rest. Enabling disk encryption ' +
-                'monitoring ensures this configuration is not modified undetected.'
+                'monitoring ensures this configuration is not modified undetected.',
+        cis1: '2.6 Ensure ASC Default policy setting "Monitor Disk Encryption" is not ' + 
+                '"Disabled"'
     },
 
     run: function(cache, settings, callback) {
