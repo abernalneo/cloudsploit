@@ -12,7 +12,7 @@ module.exports = {
     compliance: {
         hipaa: 'HIPAA requires that all encryption mechanisms be protected against ' +
                 'modifications or loss.',
-		cis1: '8.4 Ensure the key vault is recoverable'
+	cis1: '8.4 Ensure the key vault is recoverable'
     },
 
     run: function(cache, settings, callback) {
