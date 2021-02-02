@@ -9,6 +9,9 @@ module.exports = {
     recommended_action: 'Add a new log alert to the Alerts service that monitors for Policy Assignment create or update and delete events.',
     link: 'https://docs.microsoft.com/en-us/azure/azure-monitor/platform/activity-log-alerts',
     apis: ['activityLogAlerts:listBySubscriptionId'],
+    compliance: {
+        cis1: '5.2.1 Ensure that Activity Log Alert exists for Create Policy Assignment'
+    },
 
     run: function(cache, settings, callback) {
         var results = [];
