@@ -9,6 +9,9 @@ module.exports = {
     link: 'https://docs.microsoft.com/en-us/azure/role-based-access-control/custom-roles',
     recommended_action: 'Remove roles that allow permissions to create custom owner roles.',
     apis: ['roleDefinitions:list'],
+    compliance: {
+        cis2: '1.23 Ensure that no custom subscription owner roles are created'
+    },
 
     run: function(cache, settings, callback) {
         const results = [];
