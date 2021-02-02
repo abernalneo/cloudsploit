@@ -9,6 +9,9 @@ module.exports = {
     recommended_action: 'Ensure that a BYOK key is set for the Transparent Data Encryption of each SQL Server.',
     link: 'https://docs.microsoft.com/en-us/azure/sql-database/transparent-data-encryption-byok-azure-sql',
     apis: ['servers:listSql', 'encryptionProtectors:listByServer'],
+    compliance: {
+        cis2: '4.10 Ensure SQL server"s TDE protector is encrypted with BYOK (Use your own key)'
+    },
 
     run: function(cache, settings, callback) {
         const results = [];
