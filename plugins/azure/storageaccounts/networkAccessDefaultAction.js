@@ -14,7 +14,8 @@ module.exports = {
             'default network access action enables a more granular level of access controls.',
         hipaa: 'HIPAA access controls require data access to be restricted to known sources. ' +
             'Preventing default storage account access behavior enables a more granular level ' +
-            'of access controls.'
+            'of access controls.',
+        cis2: '3.7 Ensure default network access rule for Storage Accounts is set to deny'
     },
     settings: {
         storage_account_encryption_allow_pattern: {
