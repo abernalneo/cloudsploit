@@ -9,6 +9,9 @@ module.exports = {
     recommended_action: 'Select the latest version of Java for all Java-based App Services',
     link: 'https://docs.microsoft.com/en-us/azure/app-service/app-service-web-get-started-java',
     apis: ['webApps:list', 'webApps:listConfigurations'],
+    compliance: {
+        cis1: '9.9 Ensure that "Java version" is the latest, if used to run the web app'
+    },
     settings: {
         latestJavaVersion: {
             name: 'Latest Java Version',
