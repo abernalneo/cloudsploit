@@ -9,6 +9,9 @@ module.exports = {
     recommended_action: 'Ensure that Advanced Data Security is enabled for all SQL Servers.',
     link: 'https://docs.microsoft.com/en-gb/azure/sql-database/sql-database-advanced-data-security',
     apis: ['servers:listSql', 'serverSecurityAlertPolicies:listByServer'],
+    compliance: {
+        cis2: '4.4 Ensure that "Advanced Data Security" on a SQL server is set to "On"'
+    },
 
     run: function(cache, settings, callback) {
         const results = [];
