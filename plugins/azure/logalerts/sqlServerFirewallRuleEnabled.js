@@ -14,7 +14,9 @@ module.exports = {
                 'resources.',
         pci: 'PCI requires the use of firewalls to protect cardholder data. Configuring ' +
                 'a monitor for SQL Server firewall rules ensures the integrity of those ' +
-                'firewalls.'
+                'firewalls.',
+        cis1: '5.2.8 Ensure that Activity Log Alert exists for Create or Update or Delete' +
+                ' SQL Server Firewall Rule'
     },
 
     run: function(cache, settings, callback) {
