@@ -4,7 +4,7 @@ var helpers = require('../../../helpers/aws');
 var filterPatterns = [
     {
         name: 'Unauthorized API Calls',
-        pattern: '{ ($.errorCode = *UnauthorizedOperation) || ($.errorCode = AccessDenied*) }'
+        pattern: '{ ($.errorCode = \"*UnauthorizedOperation\") || ($.errorCode = \"AccessDenied*\") }'
     }
 ];
 
