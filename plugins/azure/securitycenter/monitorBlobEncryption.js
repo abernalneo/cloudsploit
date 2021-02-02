@@ -9,6 +9,10 @@ module.exports = {
     recommended_action: 'Enable Adaptive Application Controls for Storage Accounts from the Azure Security Center by ensuring AuditIfNotExists setting is used for blob encryption.',
     link: 'https://docs.microsoft.com/en-us/azure/security-center/security-center-policies',
     apis: ['policyAssignments:list'],
+    compliance: {
+        cis1: '2.11 Ensure ASC Default policy setting "Monitor Storage Blob Encryption" ' +
+		'is not "Disabled"'
+    },
 
     run: function(cache, settings, callback) {
         const results = [];
