@@ -9,6 +9,10 @@ module.exports = {
     recommended_action: 'Ensure that the data collection settings of the subscription have Auto Provisioning set to enabled.',
     link: 'https://docs.microsoft.com/en-us/azure/security-center/security-center-enable-data-collection',
     apis: ['autoProvisioningSettings:list'],
+    compliance: {
+        cis1: '2.2 Ensure that "Automatic provisioning of monitoring agent" ' + 
+	      'is set to "On"'
+    },
 
     run: function(cache, settings, callback) {
         const results = [];
