@@ -33,6 +33,11 @@ module.exports = {
         },
     },
 
+compliance: {
+        cis1: '1.22 Ensure IAM policies that allow full "*:*" ' +
+              'administrative privileges are not created'
+    },   
+
     run: function(cache, settings, callback) {
         var config = {
             iam_role_policies_ignore_path: settings.iam_role_policies_ignore_path || this.settings.iam_role_policies_ignore_path.default,
