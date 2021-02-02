@@ -9,6 +9,9 @@ module.exports = {
     recommended_action: 'Ensure that the firewall of each SQL Server is configured to prohibit traffic from the public 0.0.0.0 global IP address.',
     link: 'https://docs.microsoft.com/en-us/azure/sql-database/sql-database-security-overview/',
     apis: ['servers:listSql','firewallRules:listByServer'],
+    compliance: {
+        cis1: '6.3 Ensure no SQL Databases allow ingress 0.0.0.0/0 (ANY IP)'
+    },    
 
     run: function(cache, settings, callback) {
         var results = [];
