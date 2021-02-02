@@ -14,7 +14,7 @@ module.exports = {
             'to protect cardholder data. These requirements include rotating ' +
             'the Key periodically. Key Vaults provides Key expiration capabilities that ' +
             'should be enabled.',
-		cis1: '8.1 Ensure that the expiration date is set on all keys'
+	cis1: '8.1 Ensure that the expiration date is set on all keys'
     },
     run: function(cache, settings, callback) {
         var results = [];
