@@ -14,7 +14,8 @@ module.exports = {
         pci: 'PCI requires the use of anti-virus and anti-malware solutions. Enabling ' +
                 'VM endpoint protection provides real-time VM monitoring for malicious activity.',
         hipaa: 'HIPAA requires protection of all network systems, including monitoring ' +
-                'all network traffic for malicious, inappropriate or unusual traffic.'
+                'all network traffic for malicious, inappropriate or unusual traffic.',
+        cis1: '7.6 Ensure that the endpoint protection for all Virtual Machines is installed'
     },
 
     run: function(cache, settings, callback) {
