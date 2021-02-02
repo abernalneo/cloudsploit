@@ -9,6 +9,9 @@ module.exports = {
     recommended_action: 'Select the latest version of the .NET framework for all .NET-based App Services',
     link: 'https://docs.microsoft.com/en-us/azure/app-service/web-sites-configure',
     apis: ['webApps:list', 'webApps:listConfigurations'],
+    compliance: {
+        cis1: '9.6 Ensure that ".Net Framework" version is the latest, if used as a part of the web app'
+    },
     settings: {
         latestNetFrameworkVersion: {
             name: 'Latest .NET Framework Version',
