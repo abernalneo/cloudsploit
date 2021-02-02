@@ -9,6 +9,9 @@ module.exports = {
     recommended_action: 'Ensure that standard pricing is enabled in the security center.',
     link: 'https://azure.microsoft.com/en-us/pricing/details/security-center/',
     apis: ['pricings:list'],
+    compliance: {
+        cis2: '2.1 Ensure that standard pricing tier is selected'
+    },
 
     run: function(cache, settings, callback) {
         var results = [];
