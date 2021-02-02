@@ -9,6 +9,9 @@ module.exports = {
     recommended_action: 'Select the latest version of Python for all Python-based App Services',
     link: 'https://docs.microsoft.com/en-us/azure/app-service/containers/how-to-configure-python',
     apis: ['webApps:list', 'webApps:listConfigurations'],
+    compliance: {
+        cis1: '9.8 Ensure that "Python version" is the latest, if used to run the web app'
+    },
     settings: {
         latestPythonVersion: {
             name: 'Latest Python Version',
