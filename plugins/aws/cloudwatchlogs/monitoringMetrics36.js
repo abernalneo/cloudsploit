@@ -4,7 +4,7 @@ var helpers = require('../../../helpers/aws');
 var filterPatterns = [    
     {
         name: 'Sign In Failures',
-        pattern: '{ ($.eventName = ConsoleLogin) && ($.errorMessage = "Failed authentication") }'
+        pattern: '{ ($.eventName = ConsoleLogin) && ($.errorMessage = \"Failed authentication\") }'
     }
 ];
 
