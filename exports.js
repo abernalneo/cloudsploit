@@ -291,7 +291,6 @@ module.exports = {
         'lambdaLogGroups'               : require(__dirname + '/plugins/aws/lambda/lambdaLogGroups.js'),
         'lambdaTracingEnabled'          : require(__dirname + '/plugins/aws/lambda/lambdaTracingEnabled.js'),
 
-        //'monitoringMetrics'             : require(__dirname + '/plugins/aws/cloudwatchlogs/monitoringMetrics.js'),
         'monitoringMetrics31'			: require(__dirname + '/plugins/aws/cloudwatchlogs/monitoringMetrics31.js'),
         'monitoringMetrics32'			: require(__dirname + '/plugins/aws/cloudwatchlogs/monitoringMetrics32.js'),
         'monitoringMetrics33'           : require(__dirname + '/plugins/aws/cloudwatchlogs/monitoringMetrics33.js'),
@@ -398,6 +397,7 @@ module.exports = {
         'autoProvisioningEnabled'       : require(__dirname + '/plugins/azure/securitycenter/autoProvisioningEnabled.js'),
         'adminSecurityAlertsEnabled'    : require(__dirname + '/plugins/azure/securitycenter/adminSecurityAlertsEnabled.js'),
         'securityContactsEnabled'       : require(__dirname + '/plugins/azure/securitycenter/securityContactsEnabled.js'),
+        'securityContactsEnabledPhone'  : require(__dirname + '/plugins/azure/securitycenter/securityContactsEnabledPhone.js'),
         'monitorNsgEnabled'             : require(__dirname + '/plugins/azure/securitycenter/monitorNsgEnabled.js'),
         'highSeverityAlertsEnabled'     : require(__dirname + '/plugins/azure/securitycenter/highSeverityAlertsEnabled.js'),
         'standardPricingEnabled'        : require(__dirname + '/plugins/azure/securitycenter/standardPricingEnabled.js'),
