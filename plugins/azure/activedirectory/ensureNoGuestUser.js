@@ -9,7 +9,6 @@ module.exports = {
     link: 'https://docs.microsoft.com/en-us/azure/active-directory/b2b/add-users-administrator',
     recommended_action: 'Remove all guest users unless they are required to be members of the Active Directory account.',
     apis: ['users:list'],
-
     compliance: {
         cis1: '1.3 Ensure that there are no guest users'
     },
