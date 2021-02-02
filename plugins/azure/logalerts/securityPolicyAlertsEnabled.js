@@ -9,6 +9,9 @@ module.exports = {
     recommended_action: 'Add a new log alert to the Alerts service that monitors for Security Policy Rule create or update events.',
     link: 'https://docs.microsoft.com/en-us/azure/azure-monitor/platform/activity-log-alerts',
     apis: ['activityLogAlerts:listBySubscriptionId'],
+    compliance: {
+        cis1: '5.2.9 Ensure that Activity Log Alert exists for Update Security Policy'
+    },
 
     run: function(cache, settings, callback) {
         var results = [];
