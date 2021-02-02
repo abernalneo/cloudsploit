@@ -34,7 +34,7 @@ module.exports = {
     },
 
 compliance: {
-        cis1: '1.22 Ensure IAM policies that allow full "*:*" ' +
+        cis1: '1.22 Ensure IAM policies that allow full *:* ' +
               'administrative privileges are not created'
     },   
 
