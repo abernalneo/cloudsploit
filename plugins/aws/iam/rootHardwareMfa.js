@@ -9,7 +9,7 @@ module.exports = {
     recommended_action: 'Enable a hardware MFA device for the root account and disable any virtual devices',
     apis: ['IAM:listVirtualMFADevices', 'IAM:getAccountSummary'],
     compliance: {
-        cis2: '1.14 Ensure hardware MFA is enabled for the "root" account'
+        cis2: '1.14 Ensure hardware MFA is enabled for the root account'
     },
 
     run: function(cache, settings, callback) {
