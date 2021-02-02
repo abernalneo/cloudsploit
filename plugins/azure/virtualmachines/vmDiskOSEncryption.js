@@ -15,7 +15,8 @@ module.exports = {
                 'Enabling encryption of VM OS data helps to protect this data.',
         pci: 'PCI requires proper encryption of cardholder data at rest. ' +
              'Encryption should be enabled for all VM OS disks storing this ' +
-             'type of data.'
+             'type of data.',
+        cis1: '7.1 Ensure that "OS disk" are encrypted'
     },
 
     run: function(cache, settings, callback) {
