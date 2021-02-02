@@ -12,7 +12,9 @@ module.exports = {
     compliance: {
         hipaa: 'HIPAA requires that a secure audit log record for ' +
             'write read and delete is created for all ' +
-            'activities in the system.'
+            'activities in the system.',
+        cis1: '4.14 Ensure server parameter "log_connections" is set to "ON" ' +
+                'for PostgreSQL Database Server'
     },
 
     run: function(cache, settings, callback) {
