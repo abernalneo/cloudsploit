@@ -9,6 +9,10 @@ module.exports = {
     recommended_action: 'Ensure the server parameters for each PostgreSQL server have the connection_throttling setting enabled.',
     link: 'https://docs.microsoft.com/en-us/azure/postgresql/howto-configure-server-parameters-using-portal',
     apis: ['servers:listPostgres', 'configurations:listByServer'],
+    compliance: {
+        cis1: '4.17 Ensure server parameter "connection_throttling" is set to "ON" ' +
+		        'for PostgreSQL Database Server'
+    },
 
     run: function(cache, settings, callback) {
         const results = [];
