@@ -13,6 +13,8 @@ module.exports = {
         hipaa: 'HIPAA requires all data to be transmitted over secure channels. ' +
             'MySQL SSL connection should be used to ensure internal ' +
             'services are always connecting over a secure channel.',
+		cis1: '4.11 Ensure "Enforce SSL connection" is set to "ENABLED" ' +
+				'for MySQL Database Server'
     },
 
     run: function(cache, settings, callback) {
