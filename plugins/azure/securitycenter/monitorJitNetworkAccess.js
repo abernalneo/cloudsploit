@@ -9,6 +9,10 @@ module.exports = {
     recommended_action: 'Ensure JIT Network Access monitoring is configured for compute and apps from the Azure Security Center.',
     link: 'https://docs.microsoft.com/en-us/azure/security-center/security-center-policy-definitions',
     apis: ['policyAssignments:list'],
+    compliance: {
+        cis2: '2.12 Ensure ASC Default policy setting "Monitor JIT Network Access" ' +
+		'is not "Disabled"'
+    },
 
     run: function(cache, settings, callback) {
         const results = [];
