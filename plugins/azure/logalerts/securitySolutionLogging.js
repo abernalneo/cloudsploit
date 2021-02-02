@@ -9,6 +9,10 @@ module.exports = {
     recommended_action: 'Add a new log alert to the Alerts service that monitors for Security Solution create or update and delete events.',
     link: 'https://docs.microsoft.com/en-us/azure/security/azure-log-audit',
     apis: ['activityLogAlerts:listBySubscriptionId'],
+    compliance: {
+        cis1: '5.2.6 Ensure that Activity Log Alert exists for Create or Update Security Solution ' +
+		'& 5.2.7 Ensure that Activity Log Alert exists for Delete Security Solution'
+    },
 
     run: function(cache, settings, callback) {
         const results = [];
