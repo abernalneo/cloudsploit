@@ -11,7 +11,7 @@ module.exports = {
     apis: ['securityContacts:list'],
     compliance: {
         cis1: '2.18 Ensure that "Send email notification for high severity alerts" ' +
-		        'is set to "On"'
+		'is set to "On"'
     },
 
     run: function(cache, settings, callback) {
