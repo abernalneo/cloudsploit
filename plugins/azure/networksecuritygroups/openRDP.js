@@ -9,6 +9,9 @@ module.exports = {
     link: 'https://docs.microsoft.com/en-us/azure/virtual-network/manage-network-security-group',
     recommended_action: 'For each VM, open the Networking blade and verify that the Inbound Port Rules do not have a rule for RDP with a source equal to Any or Internet',
     apis: ['networkSecurityGroups:listAll'],
+    compliance: {
+        cis1: '6.1 Ensure that RDP access is restricted from the internet'
+    },
     apis_remediate: ['networkSecurityGroups:listAll'],
     remediation_min_version: '202011201836',
     remediation_description: 'The impacted network security group rule will be deleted if no input is provided. If the failing port is in a port range and no input is provided, the range will be deleted. Otherwise, any input will replace the open CIDR rule.',
