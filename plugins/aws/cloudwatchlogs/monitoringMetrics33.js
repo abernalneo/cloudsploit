@@ -4,7 +4,7 @@ var helpers = require('../../../helpers/aws');
 var filterPatterns = [    
     {
         name: 'Root Account Usage',
-        pattern: '{ $.userIdentity.type = Root && $.userIdentity.invokedBy NOT EXISTS && $.eventType != AwsServiceEvent }'
+        pattern: '{ $.userIdentity.type = \"Root\" && $.userIdentity.invokedBy NOT EXISTS && $.eventType != \"AwsServiceEvent\" }'
     }
 ];
 
