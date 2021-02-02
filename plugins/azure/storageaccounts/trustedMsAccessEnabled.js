@@ -9,6 +9,9 @@ module.exports = {
     recommended_action: 'For each Storage Account, configure an exception for trusted Microsoft services.',
     link: 'https://docs.microsoft.com/en-us/azure/storage/common/storage-network-security',
     apis: ['storageAccounts:list'],
+    compliance: {
+        cis2: '3.8 Ensure "Trusted Microsoft Services" is enabled for Storage Account access'
+    },
 
     run: function(cache, settings, callback) {
         var results = [];
