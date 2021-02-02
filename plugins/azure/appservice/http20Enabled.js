@@ -9,6 +9,9 @@ module.exports = {
     recommended_action: 'Enable HTTP 2.0 support in the general settings for all App Services',
     link: 'https://azure.microsoft.com/en-us/blog/announcing-http-2-support-in-azure-app-service/',
     apis: ['webApps:list', 'webApps:listConfigurations'],
+    compliance: {
+        cis1: '9.10 Ensure that "HTTP Version" is the latest, if used to run the web app'
+    },
 
     run: function(cache, settings, callback) {
         const results = [];
