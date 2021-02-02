@@ -17,7 +17,7 @@ module.exports = {
     link: 'http://docs.aws.amazon.com/awscloudtrail/latest/userguide/send-cloudtrail-events-to-cloudwatch-logs.html',
     apis: ['CloudTrail:describeTrails', 'CloudWatchLogs:describeMetricFilters'],
     compliance: {
-        cis1: '3.3 Ensure a log metric filter and alarm exist for usage of "root" account'
+        cis1: '3.3 Ensure a log metric filter and alarm exist for usage of root account'
     },
 
     run: function(cache, settings, callback) {
