@@ -9,6 +9,10 @@ module.exports = {
     recommended_action: 'Ensure that high severity alerts are configured to be sent.',
     link: 'https://docs.microsoft.com/en-us/azure/security-center/security-center-provide-security-contact-details',
     apis: ['securityContacts:list'],
+    compliance: {
+        cis1: '2.18 Ensure that "Send email notification for high severity alerts" ' +
+		        'is set to "On"'
+    },
 
     run: function(cache, settings, callback) {
         const results = [];
