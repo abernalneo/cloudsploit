@@ -11,7 +11,9 @@ module.exports = {
     apis: ['policyAssignments:list'],
     compliance: {
         hipaa: 'HIPAA requires data to be encrypted at rest. Enabling SQL encryption ' +
-                'monitoring ensures this configuration is not modified undetected.'
+                'monitoring ensures this configuration is not modified undetected.',
+        cis1: '2.15 Ensure ASC Default policy setting "Monitor SQL Encryption" ' + 
+                'is not "Disabled"'
     },
 
     run: function(cache, settings, callback) {
