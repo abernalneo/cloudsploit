@@ -23,7 +23,7 @@ module.exports = {
         pci: 'All card holder data must be transmitted over secure channels. ' +
                 'App Service HTTPS redirection should be used to ensure site visitors ' +
                 'are always connecting over a secure channel.',
-		cis1: '9.2 Ensure web app redirects all HTTP traffic to HTTPS in Azure App Service'
+	cis1: '9.2 Ensure web app redirects all HTTP traffic to HTTPS in Azure App Service'
     },
 
     run: function(cache, settings, callback) {
