@@ -12,6 +12,8 @@ module.exports = {
     compliance: {
         hipaa: 'HIPAA requires that all data is encrypted, including data at rest. ' +
                 'Enabling encryption of log storage data helps to protect this data.',
+        cis2: '5.1.6 Ensure the storage account containing the container with activity logs ' +
+                'is encrypted with BYOK (Use Your Own Key)'
     },
 
     run: function(cache, settings, callback) {
