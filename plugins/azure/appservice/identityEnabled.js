@@ -10,6 +10,9 @@ module.exports = {
     recommended_action: 'Enable system or user-assigned identities for all App Services and avoid storing credentials in code.',
     link: 'https://docs.microsoft.com/en-us/azure/app-service/overview-managed-identity',
     apis: ['webApps:list'],
+    compliance: {
+        cis1: '9.5 Ensure that Register with Azure Active Directory is enabled on App Service'
+    },
 
     run: function(cache, settings, callback) {
         const results = [];
