@@ -9,6 +9,10 @@ module.exports = {
     recommended_action: 'Ensure SQL auditing monitoring is configured for SQL databases from the Azure Security Center.',
     link: 'https://docs.microsoft.com/en-us/azure/security-center/security-center-policy-definitions',
     apis: ['policyAssignments:list'],
+    compliance: {
+        cis1: '2.14 Ensure ASC Default policy setting "Monitor SQL Auditing" ' +
+		'is not "Disabled"'
+    },
 
     run: function(cache, settings, callback) {
         const results = [];
