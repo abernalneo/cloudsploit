@@ -21,7 +21,8 @@ module.exports = {
                 'connects over a secure channel.',
         pci: 'All card holder data must be transmitted over secure channels. ' +
                 'Storage Account HTTPS should be used to ensure all data access ' +
-                'connects over a secure channel.'
+                'connects over a secure channel.',
+        cis1: '3.1 Ensure that "Secure transfer required" is set to "Enabled"'
     },
 
     run: function(cache, settings, callback) {
