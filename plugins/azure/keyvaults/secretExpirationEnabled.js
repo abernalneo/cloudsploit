@@ -9,6 +9,9 @@ module.exports = {
     recommended_action: 'Ensure each Key Vault has an expiry time set that provides for sufficient rotation.',
     link: 'https://docs.microsoft.com/en-us/azure/secret-vault/about-secrets-secrets-and-certificates',
     apis: ['vaults:list', 'vaults:getSecrets'],
+    compliance: {
+        cis1: '8.2 Ensure that the expiration date is set on all Secrets'
+    },
 
     run: function(cache, settings, callback) {
         var results = [];
