@@ -9,6 +9,10 @@ module.exports = {
     recommended_action: 'Ensure the server parameters for each PostgreSQL server have the log_retention_days setting set to 4 or more days.',
     link: 'https://docs.microsoft.com/en-us/azure/postgresql/howto-configure-server-parameters-using-portal',
     apis: ['servers:listPostgres', 'configurations:listByServer'],
+    compliance: {
+        cis1: '4.18 Ensure server parameter "log_retention_days" is greater than 3 days ' +
+		'for PostgreSQL Database Server'
+    },
 
     run: function(cache, settings, callback) {
         const results = [];
