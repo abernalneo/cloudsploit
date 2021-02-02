@@ -9,6 +9,9 @@ module.exports = {
     recommended_action: 'Enable RBAC authentication for all Azure Kubernetes Clusters',
     link: 'https://docs.microsoft.com/en-us/azure/aks/aad-integration',
     apis: ['managedClusters:list'],
+    compliance: {
+        cis1: '8.5 Enable role-based access control (RBAC) within Azure Kubernetes Services'
+    },
 
     run: function(cache, settings, callback) {
         var results = [];
