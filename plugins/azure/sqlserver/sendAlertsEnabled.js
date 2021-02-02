@@ -9,6 +9,9 @@ module.exports = {
     recommended_action: 'Ensure that an email address is activated under send alerts in advanced data security for all SQL servers.',
     link: 'https://docs.microsoft.com/en-gb/azure/sql-database/sql-database-advanced-data-security',
     apis: ['servers:listSql', 'serverSecurityAlertPolicies:listByServer'],
+    compliance: {
+        cis2: '4.6 Ensure that "Send alerts to" is set'
+    },
 
     run: function(cache, settings, callback) {
         const results = [];
