@@ -11,7 +11,9 @@ module.exports = {
     apis: ['policyAssignments:list'],
     compliance: {
         pci: 'PCI requires all system components have the latest updates ' +
-             'and patches installed within a month of release.'
+             'and patches installed within a month of release.',
+        cis1: '2.3 Ensure ASC Default policy setting "Monitor System ' + 
+                'Updates" is not "Disabled"'
     },
 
     run: function(cache, settings, callback) {
