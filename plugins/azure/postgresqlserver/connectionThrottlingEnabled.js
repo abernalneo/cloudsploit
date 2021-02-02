@@ -11,7 +11,7 @@ module.exports = {
     apis: ['servers:listPostgres', 'configurations:listByServer'],
     compliance: {
         cis1: '4.17 Ensure server parameter "connection_throttling" is set to "ON" ' +
-		        'for PostgreSQL Database Server'
+		'for PostgreSQL Database Server'
     },
 
     run: function(cache, settings, callback) {
