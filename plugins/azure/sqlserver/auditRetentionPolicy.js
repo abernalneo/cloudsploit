@@ -9,6 +9,9 @@ module.exports = {
     recommended_action: 'Ensure that the storage account retention policy for each SQL server is set to greater than 90 days.',
     link: 'https://docs.microsoft.com/en-us/azure/sql-database/sql-database-auditing',
     apis: ['servers:listSql', 'serverBlobAuditingPolicies:get'],
+    compliance: {
+        cis1: '4.3 Ensure that "Auditing" Retention is "greater than 90 days"'
+    },
 
     run: function(cache, settings, callback) {
         var results = [];
