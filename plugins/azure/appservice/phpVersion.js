@@ -9,6 +9,9 @@ module.exports = {
     recommended_action: 'Select the latest version of PHP for all PHP-based App Services',
     link: 'https://docs.microsoft.com/en-us/azure/app-service/web-sites-php-configure',
     apis: ['webApps:list', 'webApps:listConfigurations'],
+    compliance: {
+        cis1: '9.7 Ensure that "PHP version" is the latest, if used to run the web app'
+    },
     settings: {
         latestPhpVersion: {
             name: 'Latest PHP Version',
