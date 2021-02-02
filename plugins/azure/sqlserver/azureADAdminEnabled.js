@@ -9,6 +9,9 @@ module.exports = {
     recommended_action: 'Ensure Azure Active Directory admin is enabled on all SQL servers.',
     link: 'https://docs.microsoft.com/en-us/azure/sql-database/sql-database-aad-authentication-configure',
     apis: ['servers:listSql', 'serverAzureADAdministrators:listByServer'],
+    compliance: {
+        cis1: '4.8 & 4.19 Ensure that Azure Active Directory Admin is configured'
+    },
 
     run: function(cache, settings, callback) {
         const results = [];
