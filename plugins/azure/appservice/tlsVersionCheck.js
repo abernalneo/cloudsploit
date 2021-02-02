@@ -13,7 +13,7 @@ module.exports = {
         pci: 'PCI requires all web applications encrypt data ' +
             'in transit. This includes using the latest TLS ' +
             'version.',
-		cis1: '9.3 Ensure web app is using the latest version of TLS encryption'
+	cis1: '9.3 Ensure web app is using the latest version of TLS encryption'
     },
 
     run: function(cache, settings, callback) {
