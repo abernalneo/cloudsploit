@@ -13,7 +13,8 @@ module.exports = {
         hipaa: 'HIPAA requires that all systems used for storing ' +
                 'covered and user data must deny-all activity by ' +
                 'default, along with keeping all data private ' +
-                'and secure.'
+                'and secure.',
+        cis1: '5.1.5 Ensure the storage container storing the activity logs is not publicly accessible'
     },
 
     run: function(cache, settings, callback) {
