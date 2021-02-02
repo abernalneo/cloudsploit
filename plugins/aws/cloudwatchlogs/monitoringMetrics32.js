@@ -4,7 +4,7 @@ var helpers = require('../../../helpers/aws');
 var filterPatterns = [
     {
         name: 'Sign In Without MFA',
-        pattern: '{ ($.eventName = ConsoleLogin) && ($.additionalEventData.MFAUsed != Yes) }'
+        pattern: '{ ($.eventName = \"ConsoleLogin\") && ($.additionalEventData.MFAUsed != \"Yes\") }'
     }
 ];
 
