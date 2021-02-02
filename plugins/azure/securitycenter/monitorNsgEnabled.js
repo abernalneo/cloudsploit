@@ -9,6 +9,10 @@ module.exports = {
     recommended_action: 'Ensure Network Security Group monitoring is configured from the Azure Security Center.',
     link: 'https://docs.microsoft.com/en-us/azure/security-center/security-center-policy-definitions',
     apis: ['policyAssignments:list'],
+    compliance: {
+        cis1: '2.7 Ensure ASC Default policy setting "Monitor Network Security Groups" ' +
+		'is not "Disabled"'
+    },
 
     run: function(cache, settings, callback) {
         const results = [];
