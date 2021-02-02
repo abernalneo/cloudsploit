@@ -9,6 +9,9 @@ module.exports = {
     recommended_action: 'Enable incoming client certificate SSL setting for all App Services.',
     link: 'https://docs.microsoft.com/en-us/azure/app-service/app-service-web-configure-tls-mutual-auth#enable-client-certificates',
     apis: ['webApps:list'],
+    compliance: {
+        cis1: '9.4 Ensure the web app has "Client Certificates (Incoming client certificates)" set to "On"'
+    },
 
     run: function(cache, settings, callback) {
         const results = [];
