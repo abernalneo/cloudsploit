@@ -13,7 +13,8 @@ module.exports = {
         pci: 'PCI requires log profile retention history to be' +
             ' a minimum of 365 days.',
         hipaa: 'HIPAA requires log profile data to be archived ' +
-                'for a minimum of 365 days.'
+                'for a minimum of 365 days.',
+        cis1: '5.1.2 Ensure that Activity Log Retention is set 365 days or greater'
     },
 
     run: function(cache, settings, callback) {
