@@ -12,7 +12,7 @@ module.exports = {
         pci: 'PCI requires MFA for all access to cardholder environments. ' +
              'Create an MFA key for the root account and then lock it in ' +
              'a safe location for use as backup for named IAM users.',
-        cis1: '1.13 Ensure MFA is enabled for the "root" account'
+        cis1: '1.13 Ensure MFA is enabled for the root account'
     },
 
     run: function(cache, settings, callback) {
