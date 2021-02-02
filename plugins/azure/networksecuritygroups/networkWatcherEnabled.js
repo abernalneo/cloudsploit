@@ -9,6 +9,9 @@ module.exports = {
     recommended_action: 'Enable the Network Watcher service in all locations.',
     link: 'https://docs.microsoft.com/en-us/azure/network-watcher/network-watcher-monitoring-overview',
     apis: ['networkWatchers:listAll', 'virtualNetworks:listAll'],
+    compliance: {
+        cis1: '6.5 Ensure that Network Watcher is "Enabled"'
+    },
 
     run: function(cache, settings, callback) {
         const results = [];
