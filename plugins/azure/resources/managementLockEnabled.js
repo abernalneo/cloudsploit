@@ -9,6 +9,9 @@ module.exports = {
     recommended_action: '1. Go to Resources. 2. Select the resource. 3. Select the Locks blade under settings on the left side. 4. Add a lock 5. Enter the Tags Blade and  add cloudsploitLock as a tag with true as its value.',
     link: 'https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-lock-resources',
     apis: ['resources:list', 'managementLocks:listAtSubscriptionLevel'],
+    compliance: {
+        cis2: '8.3 Ensure that Resource Locks are set for mission critical Azure resources'
+    },
     settings: {
         tag: {
             name: 'Management Lock Tag',
