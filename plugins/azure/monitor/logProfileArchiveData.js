@@ -15,7 +15,8 @@ module.exports = {
             'logging and auditing solution for Azure since it is tightly ' +
             'integrated into most Azure services and APIs.',
         pci: 'Log profiles satisfy the PCI requirement to log all account activity ' +
-            'within environments containing cardholder data.'
+            'within environments containing cardholder data.',
+        cis1: '5.1.4 Ensure the log profile captures activity logs for all regions including global'
     },
 
     run: function(cache, settings, callback) {
