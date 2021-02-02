@@ -9,6 +9,9 @@ module.exports = {
     link: 'https://docs.microsoft.com/en-us/azure/virtual-network/manage-network-security-group',
     recommended_action: 'Restrict TCP port 22 to known IP addresses',
     apis: ['networkSecurityGroups:listAll'],
+    compliance: {
+        cis1: '6.2 Ensure that SSH access is restricted from the internet'
+    },
     apis_remediate: ['networkSecurityGroups:listAll'],
     remediation_min_version: '202011201836',
     remediation_description: 'The impacted network security group rule will be deleted if no input is provided. If the failing port is in a port range and no input is provided, the range will be deleted. Otherwise, any input will replace the open CIDR rule.',
