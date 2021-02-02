@@ -9,6 +9,10 @@ module.exports = {
     recommended_action: 'Add a new log alert to the Alerts service that monitors for Network Security Group create or update and delete events.',
     link: 'https://docs.microsoft.com/en-us/azure/azure-monitor/platform/activity-log-alerts',
     apis: ['activityLogAlerts:listBySubscriptionId'],
+    compliance: {
+        cis1: '5.2.2 Ensure that Activity Log Alert exists for Create or Update Network Security Group ' +
+		'& 5.2.3 Ensure that Activity Log Alert exists for Delete Network Security Group'
+    },
     remediation_min_version: '202011191613',
     remediation_description: 'A Network Security Group log alert will be created to monitor create, update and delete actions',
     apis_remediate: ['activityLogAlerts:listBySubscriptionId'],
