@@ -9,6 +9,10 @@ module.exports = {
     recommended_action: 'Add a new log alert to the Alerts service that monitors for Network Security Group rule create or update and delete events.',
     link: 'https://docs.microsoft.com/en-us/azure/azure-monitor/platform/activity-log-alerts',
     apis: ['activityLogAlerts:listBySubscriptionId'],
+    compliance: {
+        cis1: '5.2.4 Ensure that Activity Log Alert exists for Create or Update Network Security Group Rule ' +
+		'& 5.2.5 Ensure that activity log alert exists for the Delete Network Security Group Rule'
+    },
 
     run: function(cache, settings, callback) {
         var results = [];
