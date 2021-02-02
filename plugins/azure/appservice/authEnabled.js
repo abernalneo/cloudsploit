@@ -12,7 +12,8 @@ module.exports = {
     compliance: {
         hipaa: 'HIPAA requires all application access to be restricted to known users ' +
                'for auditing and security controls.',
-        pci: 'Access to system components must be restricted to known users.'
+        pci: 'Access to system components must be restricted to known users.',
+		cis1: '9.1 Ensure App Service Authentication is set on Azure App Service'
     },
 
     run: function(cache, settings, callback) {
