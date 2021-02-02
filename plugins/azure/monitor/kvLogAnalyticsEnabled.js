@@ -12,7 +12,8 @@ module.exports = {
     compliance: {
         hipaa: 'HIPAA requires that a secure audit record for ' +
                 'write read and delete is created for all ' +
-                'activities in the system.'
+                'activities in the system.',
+		cis1: '5.1.7 Ensure that logging for Azure KeyVault is "Enabled"'
     },
 
     run: function(cache, settings, callback) {
